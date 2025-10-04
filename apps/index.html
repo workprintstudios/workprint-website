@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Apps by Workprint Studios</title>
+    <link rel="icon" href="/wp-content/uploads/2023/10/workprint_studios_logo_no_text.webp" type="image/png">
+
+    <style>
+        body {
+            background-color: rgba(229, 229, 229, 1);
+            margin: 0;
+            padding-top: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: rgba(1, 1, 1, 0.75);
+            height: 10%;
+            color: white;
+            padding: 0px;
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            left: 0;
+            transition: background-color 0.3s; 
+            border-bottom-left-radius: 10px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navi {
+            padding-right: 5%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0px 10px;
+        }
+        nav a:hover {
+            color: black; 
+        }
+
+        .main-content {
+            padding-top: 12%;
+            text-align: center;
+        }
+
+        .apps-title {
+            font-size: 200%;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 2%;
+        }
+
+        .apps-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .app-card img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .app-name {
+            font-weight: bold;
+            font-size: 120%;
+            margin-bottom: 10px;
+        }
+
+        .app-desc {
+            font-size: 90%;
+            color: #444;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navi">
+            <nav>
+                <a href="https://www.workprintstudios.com">Home</a>
+                <a href="https://www.workprintstudios.com/films">Films</a>
+                <a href="https://www.workprintstudios.com/apps">Apps</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Body -->
+    <div class="main-content">
+        <h1 class="apps-title">Apps by Workprint Studios</h1>
+        <div class="apps-grid">
+            <!-- Rankball -->
+            <div class="app-card">
+                <img src="https://raw.githubusercontent.com/workprintstudios/workprint-website/main/wp-content/uploads/2023/10/rankball-logo.png" alt="Rankball Logo">
+                <div class="app-name">Rankball</div>
+                <div class="app-desc">A sports player ranker for coaches to track and evaluate players’ abilities. Currently for baseball, with football, soccer, and more coming soon.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <nav2>
+            <a href="https://www.workprintstudios.com/cookie-policy/">Cookie Policy</a>
+            <a href="https://www.workprintstudios.com/privacy-policy">Privacy Policy</a>
+            <a href="https://www.workprintstudios.com/terms-of-use/">Terms of Use</a>
+        </nav2>
+        <p style="text-align: center">WORKPRINT STUDIOS &trade; &copy; 2022-2023</p>
+    </footer>
+</body>
+</html>

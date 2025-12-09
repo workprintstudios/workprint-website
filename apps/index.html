@@ -186,6 +186,11 @@
         footer a:hover {
             color:black;
         }
+        .card-display {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+            gap: 16px; /* spacing between cards */
+        }
     </style>
 </head>
 <body>
@@ -220,40 +225,41 @@
     <!-- Body -->
     <div class="main-content">
         <h1 class="apps-title">Apps by Workprint Studios</h1>
-        <div class="app-card" onclick="window.open('https://www.workprintstudios.com/rankball', '_blank')" style="cursor:pointer; padding: 20px;">
-            <img src="https://raw.githubusercontent.com/workprintstudios/workprint-website/main/wp-content/uploads/2023/10/rankball_logo.png" alt="Rankball Logo">
-            <div class="app-name">Rankball</div>
-            <div class="app-desc">
-                A sports player ranker for coaches to track and evaluate players’ abilities. 
-                Currently for baseball, with football, soccer, and more coming soon.
+        <div class="card-display">        
+            <div class="app-card" onclick="window.open('https://www.workprintstudios.com/rankball', '_blank')" style="cursor:pointer; padding: 20px;">
+                <img src="https://raw.githubusercontent.com/workprintstudios/workprint-website/main/wp-content/uploads/2023/10/rankball_logo.png" alt="Rankball Logo">
+                <div class="app-name">Rankball</div>
+                <div class="app-desc">
+                    A sports player ranker for coaches to track and evaluate players’ abilities. 
+                    Currently for baseball, with football, soccer, and more coming soon.
+                </div>
+            
+                <!-- Google Play button INSIDE the card -->
+                <a href="https://play.google.com/store/apps/details?id=com.workprintstudios.rankball" 
+                   target="_blank" 
+                   onclick="event.stopPropagation();">
+                    <img alt="Get it on Google Play"
+                         src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                         style="height:60px; margin-top: 15px;"/>
+                </a>
             </div>
-        
-            <!-- Google Play button INSIDE the card -->
-            <a href="https://play.google.com/store/apps/details?id=com.workprintstudios.rankball" 
-               target="_blank" 
-               onclick="event.stopPropagation();">
-                <img alt="Get it on Google Play"
-                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                     style="height:60px; margin-top: 15px;"/>
-            </a>
-        </div>
-        <div class="app-card" onclick="window.open('https://www.studioroster.com/', '_blank')" style="cursor:pointer; padding: 20px;">
-            <img src="https://raw.githubusercontent.com/workprintstudios/studioroster-website/images/logo.png" alt="Studio Roster Logo">
-            <div class="app-name">Studio Roster</div>
-            <div class="app-desc">
-               A film production organization and communication app. Offers messaging, project invtes, and a script wizard that gets a project started by analising your script. Schedule project crews, view color coded schdeules. 
+            <div class="app-card" onclick="window.open('https://www.studioroster.com/', '_blank')" style="cursor:pointer; padding: 20px;">
+                <img src="https://raw.githubusercontent.com/workprintstudios/workprint-website/main/wp-content/uploads/2023/10/studio_roster_logo.png" alt="Studio Roster Logo">
+                <div class="app-name">Studio Roster</div>
+                <div class="app-desc">
+                   A film production organization and communication app. Offers messaging, project invtes, and a script wizard that gets a project started by analising your script. Schedule project crews, view color coded schdeules. 
+                </div>
+            
+                <!-- Google Play button INSIDE the card -->
+                <a href="https://play.google.com/store/apps/details?id=com.workprintstudios.studioroster" 
+                   target="_blank" 
+                   onclick="event.stopPropagation();">
+                    <img alt="Get it on Google Play"
+                         src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                         style="height:60px; margin-top: 15px;"/>
+                </a>
             </div>
-        
-            <!-- Google Play button INSIDE the card -->
-            <a href="https://play.google.com/store/apps/details?id=com.workprintstudios.studioroster" 
-               target="_blank" 
-               onclick="event.stopPropagation();">
-                <img alt="Get it on Google Play"
-                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                     style="height:60px; margin-top: 15px;"/>
-            </a>
         </div>
-
     </div>
 
     <!-- Footer -->
@@ -267,6 +273,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

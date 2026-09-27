@@ -821,120 +821,7 @@
                     Actualize
                     <span class="arrow">→</span>
                 </button>
-                <script>
-                    const heroButtonPhrases = [
-                        "Actualize",
-                        "Bring Your Vision to Life",
-                        "Begin Your Vision",
-                        "Create Your Vision",
-                        "Make It Real",
-                        "Bring It to Life",
-                        "Start Creating",
-                        "Turn Vision Into Reality",
-                        "Make Your Vision Real",
-                        "Start Your Project",
-                        "Create Something Real",
-                        "Bring Your Idea to Life",
-                        "Make It Happen",
-                        "Start Your Story",
-                        "Create Your Story",
-                        "Build Your Vision",
-                        "Shape Your Vision",
-                        "Realize Your Vision",
-                        "See It Come to Life",
-                        "Turn Ideas Into Reality",
-                        "Start Bringing It to Life",
-                        "Create What You Envision",
-                        "Make What You Envision",
-                        "Build What You Envision",
-                        "Bring What You Envision to Life",
-                        "Turn Your Vision Into Film",
-                        "Bring Your Story to Life",
-                        "Create Your Story",
-                        "Start Your Film",
-                        "Make Your Film",
-                        "Create the Vision",
-                        "Bring the Vision to Life",
-                        "Start the Creation",
-                        "Begin Creating",
-                        "Start Bringing Your Vision to Life",
-                        "Turn Your Idea Into Reality",
-                        "Make Your Idea Real",
-                        "Bring Your Idea to Life",
-                        "Create Your Idea",
-                        "Develop Your Vision",
-                        "Shape Your Story",
-                        "Build Your Story",
-                        "Create Your Concept",
-                        "Bring Your Concept to Life",
-                        "Turn Concept Into Reality",
-                        "Start With Your Vision",
-                        "Start With an Idea",
-                        "Take Your Idea Further",
-                        "Take Your Vision Further",
-                        "Move Your Vision Forward",
-                        "Bring It to the Screen",
-                        "Put Your Vision on Screen",
-                        "See Your Vision on Screen",
-                        "Turn Vision Into Film",
-                        "Turn Ideas Into Film",
-                        "Create for the Screen",
-                        "Bring Your Story to Screen",
-                        "Start Your Production",
-                        "Begin Your Production",
-                        "Create Your Production",
-                        "Bring Your Production to Life",
-                        "Make Your Production Real",
-                        "Start Making",
-                        "Start Creating",
-                        "Start Building",
-                        "Start Bringing It Together",
-                        "Turn Your Vision Into Something Real",
-                        "Make Your Vision Happen",
-                        "Make Your Story Happen",
-                        "Make Your Idea Happen",
-                        "Bring Your Creative Vision to Life",
-                        "Create What You Imagine",
-                        "Make What You Imagine Real",
-                        "Turn Imagination Into Reality",
-                        "Turn Ideas Into Something Real",
-                        "Create Something You Envision",
-                        "Start Making Your Vision Real",
-                        "Start Making Your Idea Real",
-                        "Bring Your Creative Idea to Life",
-                        "Bring Your Concept Into Focus",
-                        "Turn Your Concept Into Film",
-                        "Turn Your Story Into Film",
-                        "Turn Your Story Into Reality",
-                        "Create the Story You Envision",
-                        "Make the Story You Envision",
-                        "Bring Your Film to Life",
-                        "Start Bringing Your Film to Life",
-                        "Create Your Next Film",
-                        "Start Your Next Film",
-                        "Begin Your Next Project",
-                        "Create Your Next Project",
-                        "Bring Your Next Project to Life",
-                        "Let's Create",
-                        "Let's Bring It to Life",
-                        "Let's Make It Real",
-                        "Let's Create Your Vision",
-                        "Let's Bring Your Vision to Life",
-                        "Let's Make Something Real",
-                        "Let's Start Creating",
-                        "Let's Make It Happen"
-                    ];
-                    
-                    const beginButton = document.getElementById("beginButton");
-                    
-                    if (beginButton) {
-                        const phrase =
-                            heroButtonPhrases[Math.floor(Math.random() * heroButtonPhrases.length)];
-                    
-                        beginButton.childNodes[0].nodeValue = phrase + " ";
-                        state.heroButtonText = selectedHeroPhrase;
-                    }
-                </script>
+               
             </div>
 
         </section>
@@ -1367,6 +1254,119 @@
 </div>
 
 <script type="module">
+    
+    const heroButtonPhrases = [
+        "Actualize",
+        "Bring Your Vision to Life",
+        "Begin Your Vision",
+        "Create Your Vision",
+        "Make It Real",
+        "Bring It to Life",
+        "Start Creating",
+        "Turn Vision Into Reality",
+        "Make Your Vision Real",
+        "Start Your Project",
+        "Create Something Real",
+        "Bring Your Idea to Life",
+        "Make It Happen",
+        "Start Your Story",
+        "Create Your Story",
+        "Build Your Vision",
+        "Shape Your Vision",
+        "Realize Your Vision",
+        "See It Come to Life",
+        "Turn Ideas Into Reality",
+        "Start Bringing It to Life",
+        "Create What You Envision",
+        "Make What You Envision",
+        "Build What You Envision",
+        "Bring What You Envision to Life",
+        "Turn Your Vision Into Film",
+        "Bring Your Story to Life",
+        "Create Your Story",
+        "Start Your Film",
+        "Make Your Film",
+        "Create the Vision",
+        "Bring the Vision to Life",
+        "Start the Creation",
+        "Begin Creating",
+        "Start Bringing Your Vision to Life",
+        "Turn Your Idea Into Reality",
+        "Make Your Idea Real",
+        "Bring Your Idea to Life",
+        "Create Your Idea",
+        "Develop Your Vision",
+        "Shape Your Story",
+        "Build Your Story",
+        "Create Your Concept",
+        "Bring Your Concept to Life",
+        "Turn Concept Into Reality",
+        "Start With Your Vision",
+        "Start With an Idea",
+        "Take Your Idea Further",
+        "Take Your Vision Further",
+        "Move Your Vision Forward",
+        "Bring It to the Screen",
+        "Put Your Vision on Screen",
+        "See Your Vision on Screen",
+        "Turn Vision Into Film",
+        "Turn Ideas Into Film",
+        "Create for the Screen",
+        "Bring Your Story to Screen",
+        "Start Your Production",
+        "Begin Your Production",
+        "Create Your Production",
+        "Bring Your Production to Life",
+        "Make Your Production Real",
+        "Start Making",
+        "Start Creating",
+        "Start Building",
+        "Start Bringing It Together",
+        "Turn Your Vision Into Something Real",
+        "Make Your Vision Happen",
+        "Make Your Story Happen",
+        "Make Your Idea Happen",
+        "Bring Your Creative Vision to Life",
+        "Create What You Imagine",
+        "Make What You Imagine Real",
+        "Turn Imagination Into Reality",
+        "Turn Ideas Into Something Real",
+        "Create Something You Envision",
+        "Start Making Your Vision Real",
+        "Start Making Your Idea Real",
+        "Bring Your Creative Idea to Life",
+        "Bring Your Concept Into Focus",
+        "Turn Your Concept Into Film",
+        "Turn Your Story Into Film",
+        "Turn Your Story Into Reality",
+        "Create the Story You Envision",
+        "Make the Story You Envision",
+        "Bring Your Film to Life",
+        "Start Bringing Your Film to Life",
+        "Create Your Next Film",
+        "Start Your Next Film",
+        "Begin Your Next Project",
+        "Create Your Next Project",
+        "Bring Your Next Project to Life",
+        "Let's Create",
+        "Let's Bring It to Life",
+        "Let's Make It Real",
+        "Let's Create Your Vision",
+        "Let's Bring Your Vision to Life",
+        "Let's Make Something Real",
+        "Let's Start Creating",
+        "Let's Make It Happen"
+    ];
+    
+    const beginButton = document.getElementById("beginButton");
+    
+    if (beginButton) {
+        const phrase =
+            heroButtonPhrases[Math.floor(Math.random() * heroButtonPhrases.length)];
+    
+        beginButton.childNodes[0].nodeValue = phrase + " ";                        
+    }
+                
     import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
     import {
         getFirestore,
@@ -1390,8 +1390,7 @@
 
 
     const state = {
-        step: 1,
-        heroButtonText: "",
+        step: 1,        
         type: "",
         stage: "",
         purpose: "",
@@ -1606,7 +1605,8 @@
                     email: state.email,
                     phone: state.phone,
                     additional: state.additional,
-
+                    heroButtonText: selectedHeroPhrase,
+                    
                     submittedAt: serverTimestamp()
 
                 });

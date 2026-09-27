@@ -1383,10 +1383,11 @@
     const beginButton = document.getElementById("beginButton");
     
     if (beginButton) {
-        const phrase =
+        selectedHeroPhrase =
             heroButtonPhrases[Math.floor(Math.random() * heroButtonPhrases.length)];
     
-        beginButton.childNodes[0].nodeValue = phrase + " ";                        
+        beginButton.childNodes[0].nodeValue =
+            selectedHeroPhrase + " ";
     }
                 
     const state = {

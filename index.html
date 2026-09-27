@@ -1255,6 +1255,28 @@
 
 <script type="module">
     
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+    import {
+        getFirestore,
+        collection,
+        addDoc,
+        serverTimestamp
+    } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCIX-ViSON-am4H647CJ7d6m_KDuKhR0hQ",
+      authDomain: "workprintstudios-proposals.firebaseapp.com",
+      projectId: "workprintstudios-proposals",
+      storageBucket: "workprintstudios-proposals.firebasestorage.app",
+      messagingSenderId: "69505935261",
+      appId: "1:69505935261:web:d77f474684ae7803d1b174",
+      measurementId: "G-1051L3V2X3"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    let selectedHeroPhrase = "";
     const heroButtonPhrases = [
         "Actualize",
         "Bring Your Vision to Life",
@@ -1367,28 +1389,6 @@
         beginButton.childNodes[0].nodeValue = phrase + " ";                        
     }
                 
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
-    import {
-        getFirestore,
-        collection,
-        addDoc,
-        serverTimestamp
-    } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyCIX-ViSON-am4H647CJ7d6m_KDuKhR0hQ",
-      authDomain: "workprintstudios-proposals.firebaseapp.com",
-      projectId: "workprintstudios-proposals",
-      storageBucket: "workprintstudios-proposals.firebasestorage.app",
-      messagingSenderId: "69505935261",
-      appId: "1:69505935261:web:d77f474684ae7803d1b174",
-      measurementId: "G-1051L3V2X3"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-
-
     const state = {
         step: 1,        
         type: "",

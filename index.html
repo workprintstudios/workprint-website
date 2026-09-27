@@ -932,6 +932,7 @@
                             heroButtonPhrases[Math.floor(Math.random() * heroButtonPhrases.length)];
                     
                         beginButton.childNodes[0].nodeValue = phrase + " ";
+                        state.heroButtonText = selectedHeroPhrase;
                     }
                 </script>
             </div>
@@ -1390,6 +1391,7 @@
 
     const state = {
         step: 1,
+        heroButtonText: "",
         type: "",
         stage: "",
         purpose: "",
